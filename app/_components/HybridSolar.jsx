@@ -130,7 +130,7 @@ const HybridSolar = () => {
                </div>
             </div>
           </div>
-          <div className="relative aspect-square rounded-[4rem] overflow-hidden shadow-3xl border-8 border-slate-50">
+          <div className="relative aspect-6/4 rounded-[4rem] overflow-hidden shadow-3xl border-8 border-slate-50">
              <Image src="/img/grid.jpg" alt="Battery Integration" fill className="object-cover" />
              <div className="absolute inset-0 bg-blue-900/10 hover:bg-transparent transition-all" />
           </div>

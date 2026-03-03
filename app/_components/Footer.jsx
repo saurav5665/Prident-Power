@@ -22,8 +22,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const galleryImages = [
-    '/img/img2.jpg', '/img/img5.jpg', '/img/img10.jpg',
-    '/img/img11.jpg', '/img/img15.jpg', '/img/img18.jpg'
+    '/img/pr2.jpg', '/img/pr3.jpg', '/img/pr4.jpg',
+    '/img/pr5.jpg', '/img/pr6.jpg', '/meeting.png'
   ];
 
   return (

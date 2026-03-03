@@ -33,14 +33,14 @@ const Services = () => {
       title: "Off-Grid Solar Systems",
       desc: "Reliable standalone systems with battery backup for remote or power-deficit areas.",
       icon: BatteryFull,
-      img: "/img/IMG_4411.jpeg",
+      img: "/img/pr5.jpg",
       delay: 0.2
     },
     {
       title: "Hybrid Solar Systems",
       desc: "Combine grid + battery systems for uninterrupted power and better energy management.",
       icon: WifiSyncIcon,
-      img: "/img/inverter.jpeg",
+      img: "/img/pr4.jpg",
       delay: 0.3
     },
     {
@@ -54,28 +54,28 @@ const Services = () => {
       title: "O&M (AMC Services)",
       desc: "Annual maintenance, fault diagnosis, cleaning, and system performance optimization.",
       icon: Settings,
-      img: "/img/about.jpg",
+      img: "/img/pr6.jpg",
       delay: 0.5
     },
     {
       title: "Consultation & Subsidy",
       desc: "Get expert system design and support in applying for government subsidies and approvals.",
       icon: MessageSquare,
-      img: "/img/subsidy.png",
+      img: "/meeting.png",
       delay: 0.6
     },
     {
       title: "Installation & Commissioning",
       desc: "Complete EPC execution: structure mounting, module installation, DC cabling, and commissioning.",
       icon: Wrench,
-      img: "/img/img18.jpg",
+      img: "/img/pr3.jpg",
       delay: 0.7
     },
     {
       title: "Site Survey & Inspection",
       desc: "Pre-installation site visits, shadow analysis, and quality inspections for optimal design.",
       icon: SearchCode,
-      img: "/img/inspection.png",
+      img: "/img/pr2.jpg",
       delay: 0.8
     }
   ];

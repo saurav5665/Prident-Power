@@ -12,12 +12,11 @@ const Projects = () => {
   // The 7 images available for rotation
   const projectImages = [
     "/img/on-grid.png", 
-    "/img/pr2.jpeg", 
-    "/img/pr3.jpeg", 
-    "/img/pr4.jpeg", 
-    "/img/pr5.jpeg", 
+    "/img/pr2.jpg", 
+    "/img/pr3.jpg", 
+    "/img/pr4.jpg", 
+    "/img/pr5.jpg", 
     "/img/off-grid.png", 
-    "/img/img1.jpg"
   ];
 
   // Full dataset mapped to images
