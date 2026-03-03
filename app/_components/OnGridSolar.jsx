@@ -205,7 +205,7 @@ const OnGridSolar = () => {
       <section className="py-24 bg-slate-50">
         <div className="container mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-16 items-center">
           <div className="order-2 lg:order-1 relative h-[450px] rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white">
-            <Image src="/img/img2.jpg" alt="Installation Quality" fill className="object-cover" />
+            <Image src="/img/grid.jpg" alt="Installation Quality" fill className="object-cover" />
           </div>
           <div className="order-1 lg:order-2 space-y-8">
              <h2 className="text-3xl md:text-5xl font-black text-slate-900 tracking-tight uppercase">Why Prident?</h2>

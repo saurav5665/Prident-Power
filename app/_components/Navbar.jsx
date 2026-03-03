@@ -60,7 +60,6 @@ const Navbar = () => {
         { name: "Solar Calculator", href: "/solar-calculator" },
         { name: "Know Your Requirement", href: "/requirement" },
         { name: "Government Subsidy", href: "/subsidy-help" },
-        { name: "Social Media", href: "/social-media" },
         { name: "Help & Support", href: "/help" },
       ],
     },

@@ -64,7 +64,7 @@ const AboutPage = () => {
             <div className="relative">
               <div className="rounded-3xl overflow-hidden shadow-2xl border-8 border-blue-50">
                 <Image 
-                  src="/img/about-main.png" 
+                  src="/about.png" 
                   alt="Commercial Solar Project" 
                   width={600} 
                   height={500}
@@ -84,29 +84,30 @@ const AboutPage = () => {
       <section className="py-20 bg-slate-50">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid md:grid-cols-3 gap-8">
+            {/* Our Values */}
             <div className="bg-white p-10 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all">
-              <Target className="w-12 h-12 text-blue-600 mb-6" />
-              <h4 className="text-xl font-black text-slate-900 mb-4">Our Vision</h4>
+              <ShieldCheck className="w-12 h-12 text-blue-600 mb-6" />
+              <h4 className="text-xl font-black text-slate-900 mb-4">Our Values</h4>
               <p className="text-slate-500 text-sm leading-relaxed">
-                To be a leading and trusted solar EPC and development partner in India, 
-                driving the nation’s clean energy transition[cite: 98].
+                Integrity | Commitment | Responsibility | Innovation | Team Spirit | Customer Focus
               </p>
             </div>
+
+            {/* Our Vision */}
             <div className="bg-blue-950 p-10 rounded-3xl shadow-xl text-white">
-              <Users className="w-12 h-12 text-blue-400 mb-6" />
-              <h4 className="text-xl font-black mb-4">Our Culture</h4>
-              <ul className="text-blue-50/70 text-sm space-y-3">
-                <li className="flex items-center gap-2">• Team-oriented environment</li>
-                <li className="flex items-center gap-2">• Continuous improvement</li>
-                <li className="flex items-center gap-2">• Ethical business conduct</li>
-              </ul>
+              <Target className="w-12 h-12 text-blue-400 mb-6" />
+              <h4 className="text-xl font-black mb-4">Our Vision</h4>
+              <p className="text-blue-50/70 text-sm leading-relaxed">
+                To become a trusted and recognized solar EPC and development support company in India by delivering reliable, innovative, and sustainable solar energy solutions.
+              </p>
             </div>
+
+            {/* Our Mission */}
             <div className="bg-white p-10 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all">
               <Zap className="w-12 h-12 text-blue-600 mb-6" />
               <h4 className="text-xl font-black text-slate-900 mb-4">Our Mission</h4>
               <p className="text-slate-500 text-sm leading-relaxed">
-                To empower clients with clean energy solutions that reduce energy costs, 
-                improve sustainability, and generate long-term value[cite: 91].
+                To empower clients with clean energy solutions that reduce energy costs, improve sustainability, and generate long-term value.
               </p>
             </div>
           </div>
@@ -119,7 +120,7 @@ const AboutPage = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1 rounded-3xl overflow-hidden shadow-2xl relative">
               <Image 
-                src="/img/residential.png" 
+                src="about-solar.jpg" 
                 alt="Housing Solar Solution" 
                 width={600} 
                 height={500}
