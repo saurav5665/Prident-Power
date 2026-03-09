@@ -29,19 +29,11 @@ const Navbar = () => {
   }, [isOpen])
 
   const navLinks = [
-<<<<<<< HEAD
     { name: "Know Us", href: "/about" },
     { name: "Projects", href: "/projects" },
     { name: "Contact", href: "/contact" },
     {
       name: "Offers",
-=======
-    { name: "About", href: "/about" },
-    { name: "Projects", href: "/projects" },
-    { name: "Contact", href: "/contact" },
-    {
-      name: "Our Offerings",
->>>>>>> 7b331037235d6ef42a35c24d2d230786bb27e6f2
       href: "#",
       hasDropdown: true,
       subItems: [
@@ -61,11 +53,7 @@ const Navbar = () => {
       ],
     },
     {
-<<<<<<< HEAD
       name: "More",
-=======
-      name: "Resources",
->>>>>>> 7b331037235d6ef42a35c24d2d230786bb27e6f2
       href: "#",
       hasDropdown: true,
       subItems: [
