@@ -62,20 +62,25 @@ const AboutPage = () => {
             </div>
             
             <div className="relative">
-              <div className="rounded-3xl overflow-hidden shadow-2xl border-8 border-blue-50">
-                <Image 
-                  src="/about.png" 
-                  alt="Commercial Solar Project" 
-                  width={600} 
-                  height={500}
-                  className="w-full h-[450px] object-cover"
-                />
-              </div>
-              <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-slate-100 hidden md:block">
-                <p className="text-sm font-bold text-blue-600 uppercase">Commercial Solutions</p>
-                <p className="text-slate-500 text-xs">High-Performance EPC</p>
-              </div>
-            </div>
+  {/* FIX: Replaced h-[450px] with aspect-ratio classes.
+    - aspect-[4/3]: Good for mobile (prevents heavy cropping)
+    - md:aspect-[5/4]: Returns to your preferred rectangular look on tablets/desktops
+  */}
+  <div className="rounded-3xl overflow-hidden shadow-2xl p-2 border-8 border-blue-50 relative w-full aspect-5/4 md:aspect-5/4">
+    <Image 
+      src="/about.png" 
+      alt="Commercial Solar Project" 
+      fill
+      className="object-cover"
+    />
+  </div>
+
+  {/* Floating badge remains the same */}
+  <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-slate-100 hidden md:block">
+    <p className="text-sm font-bold text-blue-600 uppercase">Commercial Solutions</p>
+    <p className="text-slate-500 text-xs">High-Performance EPC</p>
+  </div>
+</div>
           </div>
         </div>
       </section>

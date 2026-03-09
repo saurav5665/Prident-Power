@@ -29,11 +29,11 @@ const Navbar = () => {
   }, [isOpen])
 
   const navLinks = [
-    { name: "About", href: "/about" },
+    { name: "Know Us", href: "/about" },
     { name: "Projects", href: "/projects" },
     { name: "Contact", href: "/contact" },
     {
-      name: "Our Offerings",
+      name: "Offers",
       href: "#",
       hasDropdown: true,
       subItems: [
@@ -53,7 +53,7 @@ const Navbar = () => {
       ],
     },
     {
-      name: "Resources",
+      name: "More",
       href: "#",
       hasDropdown: true,
       subItems: [
