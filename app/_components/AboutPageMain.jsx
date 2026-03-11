@@ -106,12 +106,12 @@ const AboutPageMain = () => {
                   className="object-cover rounded-[3rem]"
                 />
               </div>
-              <div className="absolute -bottom-10 -left-10 bg-blue-950 p-10 rounded-[2.5rem] shadow-2xl hidden xl:block text-white max-w-xs">
+              {/* <div className="absolute -bottom-10 -left-10 bg-blue-950 p-10 rounded-[2.5rem] shadow-2xl hidden xl:block text-white max-w-xs">
                   <p className="text-xs font-bold uppercase tracking-widest text-blue-400 mb-2">Our Motto</p>
                   <p className="font-bold leading-relaxed">
                     "Committed to providing unmatched service and reliability."
                   </p>
-              </div>
+              </div> */}
             </div>
 
             <div className="space-y-8">

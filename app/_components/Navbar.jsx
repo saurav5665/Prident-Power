@@ -29,40 +29,42 @@ const Navbar = () => {
   }, [isOpen])
 
   const navLinks = [
+    { name: "Home", href: "/home" },
     { name: "Know Us", href: "/about" },
     { name: "Projects", href: "/projects" },
-    { name: "Contact", href: "/contact" },
-    {
-      name: "Offers",
-      href: "#",
-      hasDropdown: true,
-      subItems: [
-        { name: "Home", href: "/home" },
-        { name: "Housing Subsidy", href: "/housing-subsidy" },
-        { name: "Commercial Subsidy", href: "/commercial-subsidy" },
-      ],
-    },
-    {
-      name: "Services",
-      href: "#",
-      hasDropdown: true,
-      subItems: [
-        { name: "On-Grid Plants", href: "/on-grid" },
-        { name: "Off-Grid Plants", href: "/off-grid" },
-        { name: "Hybrid Solar Plants", href: "/hybrid" },
-      ],
-    },
-    {
-      name: "More",
-      href: "#",
-      hasDropdown: true,
-      subItems: [
-        { name: "Solar Calculator", href: "/solar-calculator" },
-        { name: "Know Your Requirement", href: "/requirement" },
-        { name: "Government Subsidy", href: "/subsidy-help" },
-        { name: "Help & Support", href: "/help" },
-      ],
-    },
+    // {
+      //   name: "Offers",
+      //   href: "#",
+      //   hasDropdown: true,
+      //   subItems: [
+        //     { name: "Home", href: "/home" },
+        //     { name: "Housing Subsidy", href: "/housing-subsidy" },
+        //     { name: "Commercial Subsidy", href: "/commercial-subsidy" },
+        //   ],
+        // },
+        {
+          name: "Services",
+          href: "#",
+          hasDropdown: true,
+          subItems: [
+            { name: "On-Grid Plants", href: "/on-grid" },
+            { name: "Off-Grid Plants", href: "/off-grid" },
+            { name: "Hybrid Solar Plants", href: "/hybrid" },
+          ],
+        },
+        {
+          name: "More",
+          href: "#",
+          hasDropdown: true,
+          subItems: [
+            { name: "Solar Calculator", href: "/solar-calculator" },
+            { name: "Know Your Requirement", href: "/requirement" },
+            { name: "Government Subsidy", href: "/subsidy-help" },
+            { name: "Consultation & Subsidy Support", href: "/consultation" },
+            { name: "Help & Support", href: "/help" },
+          ],
+        },
+        { name: "Contact", href: "/contact" },
   ]
 
   return (

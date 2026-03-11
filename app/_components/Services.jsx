@@ -176,8 +176,7 @@ const Services = () => {
             </h3>
             
             <p className="text-blue-100/70 text-sm md:text-base lg:text-lg mb-6 md:mb-8 max-w-2xl mx-auto font-medium leading-relaxed">
-                Our engineers specialize in everything from site survey to long-term Annual Maintenance Contracts (AMC) all over India. 
-                Ensuring reliability and technical excellence for your solar investment.
+            Our engineers specialize in end-to-end services, from site surveys to long-term Annual Maintenance Contracts (AMC) across India, ensuring reliability and technical excellence for your solar investment.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

@@ -48,7 +48,7 @@ const HybridSolar = () => {
   return (
     <main className="w-full bg-white">
       {/* SECTION 1: HERO SPOTLIGHT */}
-      <section className="relative min-h-[75vh] flex items-center bg-blue-950 overflow-hidden">
+      <section className="relative min-h-[75vh] py-4 flex items-center bg-blue-950 overflow-hidden">
         <div className="container mx-auto px-6 lg:px-12 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
           <motion.div 
             initial={{ opacity: 0, x: -30 }} 
@@ -62,8 +62,7 @@ const HybridSolar = () => {
               HYBRID <br /> <span className="text-blue-500">SOLAR SOLUTIONS.</span>
             </h1>
             <p className="text-blue-100/70 text-lg md:text-xl font-medium border-l-4 border-blue-500 pl-6 max-w-xl leading-relaxed">
-              Experience the best of both worlds. The reliability of grid-connectivity paired 
-              with the absolute independence of battery backup.
+            Experience the best of both worlds – the reliability of grid connectivity combined with the independence of battery backup.
             </p>
             <div className="flex flex-wrap gap-4 mt-10">
               <Link href={'/contact'}>
@@ -131,7 +130,7 @@ const HybridSolar = () => {
             </div>
           </div>
           <div className="relative aspect-6/4 rounded-[4rem] overflow-hidden shadow-3xl border-8 border-slate-50">
-             <Image src="/img/grid.jpg" alt="Battery Integration" fill className="object-cover" />
+             <Image src="/img/hybrid.jpeg" alt="Battery Integration" fill className="object-cover" />
              <div className="absolute inset-0 bg-blue-900/10 hover:bg-transparent transition-all" />
           </div>
         </div>

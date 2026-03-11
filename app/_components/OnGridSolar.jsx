@@ -23,15 +23,15 @@ import Link from 'next/link'
 
 const OnGridSolar = () => {
   const subsidyData = [
-    { size: "1 kWp", central: "₹30,000", upState: "₹15,000", total: "₹45,000" },
-    { size: "2 kWp", central: "₹60,000", upState: "₹30,000", total: "₹90,000" },
+    { size: "1 kWp", central: "₹30,000", upState: "₹10,000", total: "₹40,000" },
+    { size: "2 kWp", central: "₹60,000", upState: "₹20,000", total: "₹80,000" },
     { size: "3 kWp+", central: "₹78,000", upState: "₹30,000", total: "₹1,08,000" },
   ];
 
   return (
     <main className="w-full bg-white">
       {/* SECTION 1: HERO SPOTLIGHT */}
-      <section className="relative min-h-[75vh] flex items-center bg-blue-950 overflow-hidden">
+      <section className="relative min-h-[75vh] py-4 flex items-center bg-blue-950 overflow-hidden">
         <div className="container mx-auto px-6 lg:px-12 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
           <motion.div 
             initial={{ opacity: 0, x: -30 }} 

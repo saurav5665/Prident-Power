@@ -11,12 +11,13 @@ const Projects = () => {
 
   // The 7 images available for rotation
   const projectImages = [
-    "/img/on-grid.png", 
     "/img/pr2.jpg", 
     "/img/pr3.jpg", 
     "/img/pr4.jpg", 
     "/img/pr5.jpg", 
-    "/img/off-grid.png", 
+    "/img/pr6.jpg",
+    "/about.png",
+    "/about-solar.png",
   ];
 
   // Full dataset mapped to images
@@ -60,11 +61,10 @@ const Projects = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
             className="text-5xl md:text-7xl font-black mb-6 tracking-tighter"
-          >
-            OUR SUCCESS <br /> <span className="text-blue-500">STORIES.</span>
+          >OUR PROJECTS
           </motion.h1>
         </div>
-      </section>
+      </section> 
 
       {/* Grid Section */}
       <section className="py-16 container mx-auto px-6">

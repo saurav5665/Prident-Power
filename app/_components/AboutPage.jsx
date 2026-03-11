@@ -62,24 +62,21 @@ const AboutPage = () => {
             </div>
             
             <div className="relative">
-            {/* FIX: Replaced h-[450px] with aspect-ratio classes.
-              - aspect-[4/3]: Good for mobile (prevents heavy cropping)
-              - md:aspect-[5/4]: Returns to your preferred rectangular look on tablets/desktops
-            */}
-            <div className="rounded-3xl overflow-hidden shadow-2xl p-2 border-8 border-blue-50 relative w-full aspect-5/4 md:aspect-5/4">
-              <Image 
-                src="/about.png" 
-                alt="Commercial Solar Project" 
-                fill
-                className="object-cover"
-              />
-            </div>
+            {/* Fixed 5:4 aspect ratio container */}
+            <div className="relative w-full aspect-6/4 rounded-[3rem] overflow-hidden shadow-2xl">
+                <Image 
+                  src="/about.png" 
+                  alt="Prident Engineering Team" 
+                  fill
+                  className="object-cover rounded-[3rem]"
+                />
+              </div>
 
             {/* Floating badge remains the same */}
-            <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-slate-100 hidden md:block">
+            {/* <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-slate-100 hidden md:block">
               <p className="text-sm font-bold text-blue-600 uppercase">Commercial Solutions</p>
               <p className="text-slate-500 text-xs">High-Performance EPC</p>
-            </div>
+            </div> */}
           </div>
           </div>
         </div>
@@ -125,7 +122,7 @@ const AboutPage = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1 rounded-3xl overflow-hidden shadow-2xl relative">
               <Image 
-                src="about-solar.jpg" 
+                src="about-solar.png" 
                 alt="Housing Solar Solution" 
                 width={600} 
                 height={500}
@@ -136,12 +133,12 @@ const AboutPage = () => {
             <div className="order-1 lg:order-2 space-y-6">
               <h2 className="text-3xl md:text-4xl font-black text-slate-900 leading-tight">
                 EPC Services & <br />
-                <span className="text-blue-600">Development Consulting</span>
+                <span className="text-blue-600">Business Development Consulting</span>
               </h2>
               <p className="text-slate-600 leading-relaxed">
                 Prident supports solar power developers and investors through business 
                 development consulting, project facilitation, and Power Purchase Agreement 
-                (PPA) coordination[cite: 5].
+                (PPA) coordination.
               </p>
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
