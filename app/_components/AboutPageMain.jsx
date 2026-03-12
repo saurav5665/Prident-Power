@@ -100,7 +100,7 @@ const AboutPageMain = () => {
               {/* Fixed 5:4 aspect ratio container */}
               <div className="relative w-full aspect-6/4 rounded-[3rem] overflow-hidden shadow-2xl">
                 <Image 
-                  src="/about.png" 
+                  src="/about.jpeg" 
                   alt="Prident Engineering Team" 
                   fill
                   className="object-cover rounded-[3rem]"

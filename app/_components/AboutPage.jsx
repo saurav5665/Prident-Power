@@ -65,7 +65,7 @@ const AboutPage = () => {
             {/* Fixed 5:4 aspect ratio container */}
             <div className="relative w-full aspect-6/4 rounded-[3rem] overflow-hidden shadow-2xl">
                 <Image 
-                  src="/about.png" 
+                  src="/about.jpeg" 
                   alt="Prident Engineering Team" 
                   fill
                   className="object-cover rounded-[3rem]"
@@ -122,7 +122,7 @@ const AboutPage = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1 rounded-3xl overflow-hidden shadow-2xl relative">
               <Image 
-                src="about-solar.png" 
+                src="about-solar.jpeg" 
                 alt="Housing Solar Solution" 
                 width={600} 
                 height={500}

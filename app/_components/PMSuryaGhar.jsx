@@ -103,7 +103,7 @@ const PMSuryaGhar = () => {
         <div className="container mx-auto px-4 md:px-12">
           <div className="bg-white border border-slate-100 rounded-[3.5rem] p-8 md:p-16 shadow-2xl overflow-hidden relative">
             <div className="grid lg:grid-cols-12 gap-12 items-center relative z-10">
-              <div className="lg:col-span-4 relative aspect-4/5 rounded-[2rem] overflow-hidden bg-slate-100">
+              <div className="lg:col-span-4 relative aspect-square rounded-[2rem] overflow-hidden bg-slate-100">
                 <Image 
                   src="/modi.png" 
                   alt="Modi Solar Initiative" 

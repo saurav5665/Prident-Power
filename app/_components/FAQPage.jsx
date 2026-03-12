@@ -115,7 +115,7 @@ const FAQPage = () => {
             </div>
 
             {/* Engineer Spotlight */}
-            <div className="hidden lg:block relative rounded-2xl overflow-hidden aspect-3/5 bg-slate-100 group shadow-2xl">
+            <div className="hidden lg:block relative rounded-2xl overflow-hidden aspect-4/5 bg-slate-100 group shadow-2xl">
               <Image 
                 src="/gaurav.png" 
                 alt="Prident Engineer"
