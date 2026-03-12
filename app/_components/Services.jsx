@@ -128,6 +128,7 @@ const Services = () => {
                       src={service.img}
                       alt={service.title}
                       fill
+                      quality={60}
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-blue-900/10 group-hover:bg-transparent transition-all" />
