@@ -16,8 +16,8 @@ const Projects = () => {
     "/img/pr4.jpg", 
     "/img/pr5.jpg", 
     "/img/pr6.jpg",
-    "/about.png",
-    "/about-solar.png",
+    "/about.jpeg",
+    "/about-solar.jpeg",
   ];
 
   // Full dataset mapped to images
