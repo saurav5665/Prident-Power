@@ -25,10 +25,10 @@ export default function RootLayout({children}) {
 
     <html lang="en">
       <body className="antialiased font-sans">
-        <Header/>
-        <Navbar/>
+        {/* <Header/>
+        <Navbar/> */}
         {children}
-        <Footer/>
+        {/* <Footer/> */}
       </body>
     </html>
 
