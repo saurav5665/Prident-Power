@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Sparkles,
@@ -50,6 +50,30 @@ const BirthdayWishForSarah = () => {
   const [candlesBlown, setCandlesBlown] = useState(false);
   const [confetti, setConfetti] = useState(false);
 
+  // Safe SSR window dimensions state
+  const [dimensions, setDimensions] = useState({
+    width: 1200,
+    height: 800,
+  });
+
+  useEffect(() => {
+    // Set initial dimensions safely on the client
+    setDimensions({
+      width: window.innerWidth,
+      height: window.innerHeight,
+    });
+
+    const handleResize = () => {
+      setDimensions({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const nextMemory = () => {
     setCurrentMemory((prev) => (prev + 1) % favoriteMemories.length);
   };
@@ -60,16 +84,6 @@ const BirthdayWishForSarah = () => {
     setTimeout(() => setConfetti(false), 3000);
   };
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      setDimensions({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      });
-    }
-  }, []);
-  
-
   return (
     <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       {/* Animated Stars Background */}
@@ -78,8 +92,8 @@ const BirthdayWishForSarah = () => {
           key={index}
           className="absolute text-yellow-200"
           initial={{
-            x: Math.random() * width,
-            y: Math.random() * height,
+            x: Math.random() * dimensions.width,
+            y: Math.random() * dimensions.height,
             opacity: 0,
             scale: 0,
           }}
@@ -104,7 +118,7 @@ const BirthdayWishForSarah = () => {
           className="absolute text-purple-300"
           initial={{
             y: "100vh",
-            x: Math.random() * 1200,
+            x: Math.random() * dimensions.width,
             opacity: 0,
           }}
           animate={{
@@ -175,7 +189,7 @@ const BirthdayWishForSarah = () => {
           <motion.div
             animate={{ rotate: [0, 3, -3, 0] }}
             transition={{ duration: 3, repeat: Infinity }}
-            className="mb-8 inline-flex items-center gap-2 rounded-full bg-white/10 px-6 py-3 shadow-xl backdrop-blur-md border border-white/20"
+            className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-6 py-3 shadow-xl backdrop-blur-md"
           >
             <Sparkles className="text-yellow-300" />
             <span className="font-medium text-gray-200">
@@ -213,7 +227,7 @@ const BirthdayWishForSarah = () => {
               <Button
                 variant="outline"
                 onClick={() => setShowSurprise(!showSurprise)}
-                className="rounded-full border-purple-300 bg-white/10 px-8 py-6 text-lg backdrop-blur-md text-white hover:bg-white/20"
+                className="rounded-full border-purple-300 bg-white/10 px-8 py-6 text-lg text-white backdrop-blur-md hover:bg-white/20"
               >
                 <Gift className="mr-2 text-pink-400" />
                 {showSurprise ? "Hide Surprise" : "Unwrap Birthday Gift 🎁"}
@@ -270,10 +284,10 @@ const BirthdayWishForSarah = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
-          className="mt-20 max-w-5xl w-full"
+          className="mt-20 w-full max-w-5xl"
         >
-          <h2 className="text-3xl font-bold text-white mb-8">Your Amazing Interests 🌟</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <h2 className="mb-8 text-3xl font-bold text-white">Your Amazing Interests 🌟</h2>
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
             {interests.map((interest, index) => (
               <motion.div
                 key={index}
@@ -281,9 +295,9 @@ const BirthdayWishForSarah = () => {
                 whileTap={{ scale: 0.95 }}
               >
                 <Card className={`rounded-2xl border-0 bg-gradient-to-br ${interest.color} shadow-xl`}>
-                  <CardContent className="p-6 flex flex-col items-center justify-center text-white">
+                  <CardContent className="flex flex-col items-center justify-center p-6 text-white">
                     <interest.icon size={40} className="mb-3" />
-                    <span className="font-semibold text-lg">{interest.label}</span>
+                    <span className="text-lg font-semibold">{interest.label}</span>
                   </CardContent>
                 </Card>
               </motion.div>
