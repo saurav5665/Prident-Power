@@ -60,6 +60,16 @@ const BirthdayWishForSarah = () => {
     setTimeout(() => setConfetti(false), 3000);
   };
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setDimensions({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
+  }, []);
+  
+
   return (
     <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       {/* Animated Stars Background */}
@@ -68,8 +78,8 @@ const BirthdayWishForSarah = () => {
           key={index}
           className="absolute text-yellow-200"
           initial={{
-            x: Math.random() * window.innerWidth,
-            y: Math.random() * window.innerHeight,
+            x: Math.random() * width,
+            y: Math.random() * height,
             opacity: 0,
             scale: 0,
           }}
